@@ -5,12 +5,17 @@ plugins {
 group 'org.example'
 version '1.0-SNAPSHOT'
 
+// JDK 8
 sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
+    compile group: 'org.springframework', name: 'spring-context', version: '4.3.12.RELEASE'
+    testCompile group: 'org.springframework', name: 'spring-test', version: '4.3.12.RELEASE'
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
